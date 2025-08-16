@@ -1,7 +1,28 @@
-Breast Cancer Classification using Random Forest and Logistic Regression
+# Breast Cancer Classification using Random Forest and Logistic Regression
 
-Team Members: Khushal Bhalala,
-              Devyakumar Patel
+
+
+## Team Members
+
+- *Khushal Bhalala – Student ID: 200619365*  
+- *Devyakumar Patel – Student ID: 200635167*  
+
+---
+
+## Submission Details
+
+- *Course:* AIDI 1002 – Machine Learning Programming  
+- *Instructor:* Garima Malik  
+- *Institution:* Georgian College
+
+
+## Project Overview :
+
+*Dataset Used:*  
+  Breast Cancer Wisconsin (Diagnostic) Dataset (WDBC)  
+  [Dataset Link – https://github.com/toandaominh1997/dataset-for-beginners/blob/master/breast_cancer_wisconsin/data.csv] 
+
+---
 
 Summary :
 This project builds a binary classification system to detect breast cancer as Malignant (cancerous) or Benign (non-cancerous). We use two machine learning models – a Logistic Regression classifier and a Random Forest classifier – to predict tumor diagnosis based on measurements of cell nuclei from biopsy data. We evaluate both models with multiple metrics to compare their performance. The goal is to achieve high accuracy in distinguishing malignant tumors from benign ones, which can aid in early diagnosis and treatment. This project was developed as the final project for the AIDI 1002 Machine Learning Programming course (Summer 2025).
@@ -14,32 +35,28 @@ Comprehensive Evaluation: Model performance is measured with various metrics –
 Result Visualization: The project generates visualizations including a confusion matrix for predictions, an ROC curve for classifier performance, and a feature importance plot to interpret which features influence the Random Forest model.
 
 
-Algorithms Used
+Algorithms Used :
 Logistic Regression: A simple linear model used as a baseline classifier. It finds a linear decision boundary to separate the two classes. We applied feature scaling (standardization) before training to ensure the logistic regression converges and performs optimally. Logistic Regression is intuitive and provides interpretable coefficients (weights for each feature).
 
 Random Forest Classifier: An ensemble of many decision trees, providing a more powerful nonlinear classifier. Each decision tree votes on the class, and the forest’s majority vote is the final prediction. Random Forests can capture complex relationships and tend to improve accuracy and robustness. They also offer feature importance estimates, helping us identify which attributes of the data are most influential.
+# Breast Cancer Classification – Wisconsin Diagnostic Dataset (WDBC)
 
-Dataset Used
-We use the Wisconsin Diagnostic Breast Cancer (WDBC) dataset
-mdpi.com
-. This dataset contains 569 instances of breast tumor samples, each described by 30 numeric features. Out of these samples, 357 are benign and 212 are malignant
-mdpi.com
-. The features are computed from digitized images of a fine needle aspirate (FNA) of a breast mass, describing characteristics of the cell nuclei present in the image
-archive.ics.uci.edu
-. Example features include mean radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, and fractal dimension of the cell nuclei (each of these computed as mean, worst, and standard error values, totaling 30 features). The target variable is the diagnosis: Benign (0) or Malignant (1) for each tumor sample
-mdpi.com
-.
+---
 
-Source: The WDBC dataset is a well-known public dataset from the UCI Machine Learning Repository. We used a CSV version of this dataset for the project.
-Software Requirements
-Python 3 and Jupyter Notebook – for writing and running the analysis code.
-pandas – for data loading and preprocessing (handling the CSV dataset, data frames).
-scikit-learn – for machine learning algorithms (LogisticRegression, RandomForestClassifier) and evaluation metrics.
-imbalanced-learn – for handling class imbalance (e.g. techniques like SMOTE oversampling or using built-in class weights).
-matplotlib – for plotting graphs (confusion matrix, ROC curve, feature importance chart).
+## Files in This Repository
+  [Git Repo Link – https://github.com/devya001/Machine-Learning-Programming-Final_Project] 
 
+| File | Description |
+|------|-------------|
+| AIDI_1002_Final_Project_WDBC.ipynb | Main notebook: preprocessing, training, evaluation |
+| aidi_1002_final_project_wdbc.py | Python script for VS Code execution |
+| data.csv | Breast Cancer Wisconsin dataset (diagnostic) |
+| Final_project_Report.ipynb | Final report with analysis and results |
+| README.md | Project summary and instructions |
 
-How to Run
+---
+
+#How to Run
 Get the files: Download or clone the project repository, which contains the Jupyter Notebook (e.g. AIDI_1002_Final_Project_WDBC.ipynb) and the dataset file (wdbc.csv or data.csv). Make sure the CSV dataset is in the same folder as the notebook, or update the notebook path to where the data is located.
 
 Install dependencies: Install the required Python libraries if not already installed (see Software Requirements above). For example, run pip install -U pandas scikit-learn imbalanced-learn matplotlib in your environment.
@@ -63,9 +80,14 @@ Figure: Feature Importance plot from the Random Forest model. This bar chart ran
 
 Along with these plots, the notebook prints out the evaluation metrics for each model. For example, both the Logistic Regression and Random Forest achieved an accuracy around 97% on the test set, with very high precision and recall scores (indicating few false positives and few false negatives, respectively). Such performance demonstrates that the models can effectively distinguish between benign and malignant cases on the WDBC dataset.
 
+---
 References :
 UCI Machine Learning Repository – Wisconsin Diagnostic Breast Cancer (WDBC) Dataset
 archive.ics.uci.edu
+---
 mdpi.com
  (original dataset source and description).
-Kaggle – Breast Cancer Wisconsin (Diagnostic) Data Set (WDBC), Online Dataset.
+ ---
+Kaggle – Breast Cancer Wisconsin (Diagnostic) Data Set (WDBC), Online Dataset.  / 
+ https://github.com/devya001/Machine-Learning-Programming-Final_Project
+---
